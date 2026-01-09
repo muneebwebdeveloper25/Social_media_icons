@@ -1,0 +1,110 @@
+/* floating bar
+.social-bar{
+position: fixed;
+top: 50%;
+right: 20px;
+transform: translateY(-50%);
+display: flex;
+flex-direction: column;
+gap: 10px;
+z-index: 9999;
+}
+.social-bar .icon{
+width: 45px;
+height: 45px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+color: aliceblue;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.social-bar .whatsapp-icon{
+
+background-color: #25D366;
+animation: blink 1s infinite alternate;
+}
+.social-bar .fb{background-color: #1877F2;}
+.social-bar .ig{background: radial-gradient(circle at 30% 30% #fdf497, #fd5949, #d6249f, #285AEB);}
+.social-bar .yt{background-color: #FF0000;}
+
+@keyframes blink{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 8px rgba(37, 211, 102, 0.8);
+    }
+    100%{
+transform: scale(1.1);
+opacity: 0.6;
+box-shadow: 0 0 160px rgba(37, 211, 102, 1);
+
+    }
+} */
+/* Floating vertical bar */
+.social-bar {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+/* Common style for all circles */
+.social-bar .icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+/* WhatsApp special style */
+.social-bar .whatsapp-icon {
+  background-color: #25D366;
+  animation: blink 1s infinite alternate;
+}
+
+/* Doosre icons ke colours */
+.social-bar .fb { background-color: #1877F2; }
+.social-bar .ig { background: radial-gradient(circle at 30% 30%, #fdf497, #fd5949, #d6249f, #285AEB); }
+.social-bar .yt { background-color: #FF0000; }
+
+/* Blink animation */
+@keyframes blink {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 8px rgba(37,211,102,0.8);
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.6;
+    box-shadow: 0 0 16px rgba(37,211,102,1);
+  }
+}
+
+/* Hover effect sab icons pe */
+.social-bar .icon:hover {
+  transform: scale(1.15);
+}
+
+
+
+
+
